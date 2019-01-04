@@ -1,5 +1,6 @@
 package com.echelonteam.echelonapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -91,6 +92,13 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
+            String[] emails={"support@echelonteam.com"};
+            Intent sendintent=new Intent(Intent.ACTION_SEND);
+            sendintent.setType("*/*");
+            sendintent.putExtra(Intent.EXTRA_EMAIL,emails);
+            sendintent.putExtra(Intent.EXTRA_SUBJECT,"SUBJECT TEXT");
+            sendintent.putExtra(Intent.EXTRA_TEXT,"I WOULD LIKE TO SUCK YOUR DICK");
+            startActivity(sendintent);
 
         }
 
