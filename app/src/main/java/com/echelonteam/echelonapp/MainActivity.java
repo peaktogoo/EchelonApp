@@ -1,6 +1,7 @@
 package com.echelonteam.echelonapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -91,13 +92,25 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_dashboard) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            // look what,if you wanna change actvity name
+            // activity names are in android_manifest.xml,here and the file's name and make sure to fix xml as well
 
+            Intent idkman=new Intent(this,activity1.class);
+            startActivity(idkman);
         } else if (id == R.id.nav_slideshow) {
+            Intent idkmanv2=new Intent(this,activity2.class);
+            startActivity(idkmanv2);
 
         } else if (id == R.id.nav_manage) {
+            Intent idkmanv3=new Intent(this,activity3.class);
+            startActivity(idkmanv3);
 
         } else if (id == R.id.nav_share) {
-
+            //i think we should make this a Telegram group so i made it like that
+            Uri uri =Uri.parse("https://t.me/enessastimgroup");
+            Intent intent=new Intent(Intent.ACTION_VIEW);
+            intent.setData(uri);
+            startActivity(intent);
         } else if (id == R.id.nav_send) {
             String[] emails={"support@echelonteam.com"};
             Intent sendintent=new Intent(Intent.ACTION_SEND);
