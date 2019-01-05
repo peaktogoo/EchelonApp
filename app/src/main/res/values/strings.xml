@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">EchelonApp</string>
+    <string name="app_name">Echelon Team Application</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Echelon Team</string>
-    <string name="nav_header_subtitle">support@echelonteam.com</string>
+    <string name="nav_header_title">You</string>
+    <string name="nav_header_subtitle">guest@echelonteam.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="action_abtus">About us</string>
+    <string name="action_welcome">Welcome!</string>
+    <string name="action_welcomesub">Find out what can we do!</string>
 </resources>
