@@ -36,8 +36,13 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Sorry! This feature is not available to you yet", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                String[] emails={"support@echelonteam.com"};
+                Intent sendintent=new Intent(Intent.ACTION_SEND);
+                sendintent.setType("*/*");
+                sendintent.putExtra(Intent.EXTRA_EMAIL,emails);
+                sendintent.putExtra(Intent.EXTRA_SUBJECT,"Some interesting topic");
+                sendintent.putExtra(Intent.EXTRA_TEXT,"Some quality content");
+                startActivity(sendintent);
             }
         });
 
@@ -89,38 +94,36 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_dashboard) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.Info) {
+
+        } else if (id == R.id.Members) {
             // look what,if you wanna change actvity name
             // activity names are in android_manifest.xml,here and the file's name and make sure to fix xml as well
 
             Intent idkman=new Intent(this,activity1.class);
             startActivity(idkman);
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.Projects) {
             Intent idkmanv2=new Intent(this,activity2.class);
             startActivity(idkmanv2);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.Custom_ROMs) {
             Intent idkmanv3=new Intent(this,activity3.class);
             startActivity(idkmanv3);
 
-        } else if (id == R.id.nav_share) {
-            //i think we should make this a Telegram group so i made it like that
+        } else if (id == R.id.Downloads) {
+
+        } else if (id == R.id.Wallpapers) {
+
+        } else if (id== R.id.Contacts){
+
+        } else if (id == R.id.share){
             Uri uri =Uri.parse("https://t.me/enessastimgroup");
             Intent intent=new Intent(Intent.ACTION_VIEW);
             intent.setData(uri);
             startActivity(intent);
-        } else if (id == R.id.nav_send) {
-            String[] emails={"support@echelonteam.com"};
-            Intent sendintent=new Intent(Intent.ACTION_SEND);
-            sendintent.setType("*/*");
-            sendintent.putExtra(Intent.EXTRA_EMAIL,emails);
-            sendintent.putExtra(Intent.EXTRA_SUBJECT,"Some interesting topic");
-            sendintent.putExtra(Intent.EXTRA_TEXT,"Some quality content");
-            startActivity(sendintent);
 
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -5,33 +5,41 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_dashboard"
+            android:id="@+id/Info"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/nav_dashboard" />
+            android:title="Info" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/Members"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Members" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/Projects"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Projects" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/Custom_ROMs"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Custom ROMs" />
+        <item
+            android:id="@+id/Downloads"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Downloads" />
+        <item
+            android:id="@+id/Wallpapers"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Wallpapers" />
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/share"
                 android:icon="@drawable/ic_menu_share"
                 android:title="Share" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/Contacts"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Contacts" />
         </menu>
     </item>
 
