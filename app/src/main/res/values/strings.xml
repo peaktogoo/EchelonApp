@@ -6,7 +6,6 @@
     <string name="nav_header_subtitle">guest@echelonteam.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="action_abtus">About us</string>
     <string name="action_welcome">Welcome!</string>
     <string name="action_welcomesub">Find out what we can do!</string>
 </resources>
