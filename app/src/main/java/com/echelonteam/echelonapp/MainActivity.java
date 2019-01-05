@@ -96,8 +96,8 @@ public class MainActivity extends AppCompatActivity
             Intent sendintent=new Intent(Intent.ACTION_SEND);
             sendintent.setType("*/*");
             sendintent.putExtra(Intent.EXTRA_EMAIL,emails);
-            sendintent.putExtra(Intent.EXTRA_SUBJECT,"SUBJECT TEXT");
-            sendintent.putExtra(Intent.EXTRA_TEXT,"I WOULD LIKE TO SUCK YOUR DICK");
+            sendintent.putExtra(Intent.EXTRA_SUBJECT,"Some interesting topic");
+            sendintent.putExtra(Intent.EXTRA_TEXT,"Some quality content");
             startActivity(sendintent);
 
         }
