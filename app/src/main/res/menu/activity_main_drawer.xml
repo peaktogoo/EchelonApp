@@ -7,39 +7,39 @@
         <item
             android:id="@+id/Info"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Info" />
+            android:title="@string/info" />
         <item
             android:id="@+id/Members"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Members" />
+            android:title="@string/members" />
         <item
             android:id="@+id/Projects"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Projects" />
+            android:title="@string/projects" />
         <item
             android:id="@+id/Custom_ROMs"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Custom ROMs" />
+            android:title="@string/custom_roms" />
         <item
             android:id="@+id/Downloads"
             android:icon="@drawable/ic_menu_send"
-            android:title="Downloads" />
+            android:title="@string/downloads" />
         <item
             android:id="@+id/Wallpapers"
             android:icon="@drawable/ic_menu_send"
-            android:title="Wallpapers" />
+            android:title="@string/wallpapers" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/communicate">
         <menu>
             <item
                 android:id="@+id/share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="@string/share" />
             <item
                 android:id="@+id/Contacts"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Contacts" />
+                android:title="@string/contacts" />
         </menu>
     </item>
 

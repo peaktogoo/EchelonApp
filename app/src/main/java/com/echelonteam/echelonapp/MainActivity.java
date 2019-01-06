@@ -3,11 +3,10 @@ package com.echelonteam.echelonapp;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,8 +14,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -29,36 +30,36 @@ public class MainActivity extends AppCompatActivity
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(ContextCompat.getColor(this,R.color.black));
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String[] emails={"support@echelonteam.com"};
-                Intent sendintent=new Intent(Intent.ACTION_SEND);
-                sendintent.setType("*/*");
-                sendintent.putExtra(Intent.EXTRA_EMAIL,emails);
-                sendintent.putExtra(Intent.EXTRA_SUBJECT,"Some interesting topic");
-                sendintent.putExtra(Intent.EXTRA_TEXT,"Some quality content");
-                startActivity(sendintent);
+                Intent intent=new Intent(Intent.ACTION_SEND);
+                intent.setType("*/*");
+                intent.putExtra(Intent.EXTRA_EMAIL,emails);
+                intent.putExtra(Intent.EXTRA_SUBJECT,"Some interesting topic");
+                intent.putExtra(Intent.EXTRA_TEXT,"Some quality content");
+                startActivity(intent);
             }
         });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -90,43 +91,35 @@ public class MainActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        ViewFlipper viewFlipper = findViewById(R.id.main_vf);
+
         if (id == R.id.Info) {
-
+            viewFlipper.setDisplayedChild(0);
         } else if (id == R.id.Members) {
-            // look what,if you wanna change actvity name
-            // activity names are in android_manifest.xml,here and the file's name and make sure to fix xml as well
-
-            Intent idkman=new Intent(this,activity1.class);
-            startActivity(idkman);
+            viewFlipper.setDisplayedChild(1);
         } else if (id == R.id.Projects) {
-            Intent idkmanv2=new Intent(this,activity2.class);
-            startActivity(idkmanv2);
-
+            viewFlipper.setDisplayedChild(2);
         } else if (id == R.id.Custom_ROMs) {
-            Intent idkmanv3=new Intent(this,activity3.class);
-            startActivity(idkmanv3);
-
+            viewFlipper.setDisplayedChild(3);
         } else if (id == R.id.Downloads) {
-
+            viewFlipper.setDisplayedChild(4);
         } else if (id == R.id.Wallpapers) {
-
-        } else if (id== R.id.Contacts){
-
-        } else if (id == R.id.share){
-            Uri uri =Uri.parse("https://t.me/enessastimgroup");
-            Intent intent=new Intent(Intent.ACTION_VIEW);
+            viewFlipper.setDisplayedChild(5);
+        } else if (id == R.id.Contacts) {
+            viewFlipper.setDisplayedChild(6);
+        } else if (id == R.id.share) {
+            Uri uri = Uri.parse("https://t.me/enessastimgroup");
+            Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setData(uri);
             startActivity(intent);
-
         }
-
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
         return true;
     }
 }
