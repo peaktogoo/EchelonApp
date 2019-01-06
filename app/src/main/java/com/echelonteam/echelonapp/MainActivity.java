@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.Info) {
             viewFlipper.setDisplayedChild(0);
         } else if (id == R.id.Members) {
+
             viewFlipper.setDisplayedChild(1);
         } else if (id == R.id.Projects) {
             viewFlipper.setDisplayedChild(2);
