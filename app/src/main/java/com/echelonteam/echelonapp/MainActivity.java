@@ -100,15 +100,12 @@ public class MainActivity extends AppCompatActivity
             // look what,if you wanna change actvity name
             // activity names are in android_manifest.xml,here and the file's name and make sure to fix xml as well
 
-            Intent idkman=new Intent(this,activity1.class);
-            startActivity(idkman);
+
         } else if (id == R.id.Projects) {
-            Intent idkmanv2=new Intent(this,activity2.class);
-            startActivity(idkmanv2);
+
 
         } else if (id == R.id.Custom_ROMs) {
-            Intent idkmanv3=new Intent(this,activity3.class);
-            startActivity(idkmanv3);
+
 
         } else if (id == R.id.Downloads) {
 
