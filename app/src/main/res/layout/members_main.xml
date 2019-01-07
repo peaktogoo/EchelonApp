@@ -1,10 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
+
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="@color/background">
-    <TextView
-        android:id="@+id/textView2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FAFAFA"
+    android:clipChildren="false">
+   <com.alespero.expandablecardview.ExpandableCardView
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+        android:id="@+id/yunus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/members"/>
-</RelativeLayout>
+        app:title="@string/yunusname"
+        app:icon="@drawable/ic_menu_send"
+        app:inner_view="@layout/desc_yunus"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"/>
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/enes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="@string/enesname"
+        app:icon="@drawable/ic_menu_send"
+        app:inner_view="@layout/desc_enes"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"/>
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/nano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="@string/nanoname"
+        app:icon="@drawable/ic_menu_send"
+        app:inner_view="@layout/desc_nano"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"/>
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/peaktogoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="@string/peakname"
+        app:icon="@drawable/ic_menu_send"
+        app:inner_view="@layout/desc_nano"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"/>
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tgpresit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="@string/reshitname"
+        app:icon="@drawable/ic_menu_send"
+        app:inner_view="@layout/desc_reshit"
+        app:expandOnClick="true"
+        app:animationDuration="300"
+        app:startExpanded="false"/>
+
+</LinearLayout>

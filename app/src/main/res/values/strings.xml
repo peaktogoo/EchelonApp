@@ -17,4 +17,19 @@
     <string name="communicate">Communicate</string>
     <string name="share">Share</string>
     <string name="contacts">Contacts</string>
+    <string name="yunus_desc">Always confused with an Italian or French, this guy can change his design language five times a day.</string>
+    <string name="yunusname">Yunus İşleyen | Dekamir</string>
+    <string name="dev_founder">Founder, designer</string>
+    <string name="enesname">Enes Şaştım | EnesSastim</string>
+    <string name="ex_dev">Executive developer</string>
+    <string name="enes_desc">Everyone likes this guy. He somehow built every damn custom ROM available so his name can be everywhere.</string>
+    <string name="peakname">Krittin Chuaiphikroh | peaktogoo</string>
+    <string name="com_web_dev">Developer, community manager, website designer</string>
+    <string name="peak_desc">With such information, we don\'t know why is this guy still helping us. He\'s a good guy, but a bit annoying.</string>
+    <string name="nanoname">Rudy Naddour | TheMiniDev</string>
+    <string name="app_dev">App developer, designer</string>
+    <string name="nano_desc">Weirdly known by every member, his qualifying features is that he\'s goddamn fast. Really.</string>
+    <string name="reshitname">Reşit Menekşe | TGPResit</string>
+    <string name="com_de_dev">Community manager, designer</string>
+    <string name="reshit_desc">Saw weird stickers constantly? It\'s probably this guy. He can shitpost 24/7. We\'re trying to slow him down.</string>
 </resources>

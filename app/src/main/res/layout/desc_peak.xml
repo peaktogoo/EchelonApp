@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/com_web_dev"/>
+    <TextView
+        android:layout_width="400sp"
+        android:layout_height="50sp"
+        android:text="@string/peak_desc"
+        android:textColor="#adadadad"
+        android:textStyle="italic"/>
+</LinearLayout>
