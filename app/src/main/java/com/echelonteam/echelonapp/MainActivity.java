@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity
                 Intent intent=new Intent(Intent.ACTION_SEND);
                 intent.setType("*/*");
                 intent.putExtra(Intent.EXTRA_EMAIL,emails);
-                intent.putExtra(Intent.EXTRA_SUBJECT,"Some interesting topic");
-                intent.putExtra(Intent.EXTRA_TEXT,"Some quality content");
+                intent.putExtra(Intent.EXTRA_SUBJECT,"Please enter your topic");
+                intent.putExtra(Intent.EXTRA_TEXT,"Please type what you want to say");
                 startActivity(intent);
             }
         });
