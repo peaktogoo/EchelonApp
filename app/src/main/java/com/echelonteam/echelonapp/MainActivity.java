@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 String[] emails={"support@echelonteam.com"};
                 Intent intent=new Intent(Intent.ACTION_SEND);
-                intent.setType("*/*");
+                intent.setType("*"+"/*");
                 intent.putExtra(Intent.EXTRA_EMAIL,emails);
                 intent.putExtra(Intent.EXTRA_SUBJECT,"Please enter your topic");
                 intent.putExtra(Intent.EXTRA_TEXT,"Please type what you want to say");
