@@ -5,7 +5,6 @@
     <color name="colorAccent">#0069ba</color>
     <color name="secondAccent">#004bff</color>
     <color name="black">#000000</color>
-    <color name="background_material_light">#000000</color>
-    <color name="background">#ffffff</color>
+    <color name="background">#fafafa</color>
 
 </resources>
