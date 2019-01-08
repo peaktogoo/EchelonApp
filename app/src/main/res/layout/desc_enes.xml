@@ -12,6 +12,6 @@
         android:layout_width="400sp"
         android:layout_height="50sp"
         android:text="@string/enes_desc"
-        android:textColor="#adadadad"
+        android:textColor="@color/background_text"
         android:textStyle="italic"/>
 </LinearLayout>
