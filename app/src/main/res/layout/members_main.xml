@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:clipChildren="false">
+    android:clipChildren="false"
+    android:background="@color/background">
    <com.alespero.expandablecardview.ExpandableCardView
        android:layout_marginLeft="20dp"
        android:layout_marginRight="20dp"
