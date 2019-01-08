@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/background"
     android:clipChildren="false">
    <com.alespero.expandablecardview.ExpandableCardView
        android:layout_marginLeft="20dp"
@@ -60,7 +59,7 @@
         android:layout_height="wrap_content"
         app:title="@string/peakname"
         app:icon="@drawable/ic_menu_send"
-        app:inner_view="@layout/desc_nano"
+        app:inner_view="@layout/desc_peak"
         app:expandOnClick="true"
         app:animationDuration="300"
         app:startExpanded="false"/>
