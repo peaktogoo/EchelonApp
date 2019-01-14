@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 LayoutInflater inflater = (LayoutInflater)
                         getSystemService(LAYOUT_INFLATER_SERVICE);
-                View popupView = inflater.inflate(R.layout.desc_yunus, null);
+                final View popupView = inflater.inflate(R.layout.desc_yunus, null);
                 popupView.setAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_in));
                 int width = LinearLayout.LayoutParams.WRAP_CONTENT;
                 int height = LinearLayout.LayoutParams.WRAP_CONTENT;
-                boolean focusable = true; // lets taps outside the popup also dismiss it
+                boolean focusable = true;
                 final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
                 popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
                 popupView.setOnTouchListener(new View.OnTouchListener() {
