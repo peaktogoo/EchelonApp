@@ -23,7 +23,7 @@
     <android.support.constraint.ConstraintLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="150dp">
 
         <TextView
             android:id="@+id/primary_text"
@@ -56,8 +56,8 @@
             android:id="@+id/media_image"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="18dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_yunus" />
@@ -67,14 +67,14 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            android:minWidth="0dp"
             android:paddingStart="8dp"
             android:paddingEnd="8dp"
             android:text="@string/info"
             android:textColor="@color/design_default_color_primary"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/primary_text" />
+            app:layout_constraintStart_toStartOf="parent" />
 
     </android.support.constraint.ConstraintLayout>
 
