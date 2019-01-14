@@ -64,7 +64,7 @@
             app:srcCompat="@drawable/ic_yunus" />
 
         <Button
-            android:id="@+id/action_button_1"
+            android:id="@+id/infobutton"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
